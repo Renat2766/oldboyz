@@ -1,0 +1,105 @@
+//main: ../style.less
+span{
+  color: @red;
+  font-weight: 700;
+}
+.container--form{
+  width: 80%;
+  margin: 50px auto;
+}
+.contact__title{
+  margin-bottom: 40px;
+  color: @lightgreen;
+  font-size: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact__box{
+  background: @lightgreen;
+  display: flex;
+}
+.contact__left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+  color: @gray;
+}
+.contact__left h2{
+  margin-bottom: 20px;
+}
+.contact__right{
+  flex-basis: 40%;
+  padding: 40px;
+  background: @yellow;
+  color: @gray;
+}
+.input__row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input__row .input__group{
+  flex-basis: 60%;
+}
+label{
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+input{
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid @black;
+  outline: none;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+textarea{
+  width: 100%;
+  font-size: 1.2rem;
+  border: 1px solid @black;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.form__button{
+  color: @black;
+  background: @yellow;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background .3s linear, color .3s linear;
+}
+.form__button:hover, .form__button:focus{
+  background: @red;
+  color: @yellow;
+}
+.form__button:active{
+  background: #FF184E;
+}
+tr td:first-child{
+  padding-right: 20px;
+}
+tr td{
+  padding-top: 20px;
+}
+td{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.error{
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background-color: rgba(227, 110, 113, .712);
+  border-radius: 8px;
+  color: @white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}

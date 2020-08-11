@@ -1,0 +1,109 @@
+//main: ../style.less
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+.about__box {
+  width: 25%;
+  min-height: 400px;
+  margin: 30px;
+  position: relative;
+  background: #060c21;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid @black;
+  cursor: pointer;
+}
+.about__box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: @white;
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.about__box:nth-child(1):before{
+  background: linear-gradient(315deg, @red, #e4957d);
+}
+.about__box:nth-child(2):before{
+  background: linear-gradient(315deg, @lightgreen, @gray)
+}
+.about__box:nth-child(3):before{
+  background: linear-gradient(315deg, @yellow, @violet);
+}
+
+.about__box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, .05);
+  pointer-events: none;
+}
+.about__content {
+  position: relative;
+  padding: 20px;
+  transform: translateY(40px);
+}
+.about__number {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, .05);
+  transition: .5s;
+}
+.about__box:hover .about__number {
+  top: -120px;
+} 
+.about__title {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: @white;
+}
+.about__text {
+  padding: 0;
+  margin: 0;
+  color: @white;
+  font-size: 1rem;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 20px 0 0;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid @white;
+  display: inline-block;
+  color: @white;
+  transition: .5s;
+  text-transform: uppercase;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+.about__box:hover .btn {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.btn:hover {
+  color: @black;
+  background: @white;
+}

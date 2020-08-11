@@ -1,2 +1,1 @@
-# oldboyz
-Landing Page
+# oldboys

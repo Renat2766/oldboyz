@@ -1,0 +1,16 @@
+{
+  "name": "oldboyz",
+  "version": "1.0.0",
+  "description": "landing page portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "javascript"
+  ],
+  "author": "Renats Shidlovskas <duce201@gmail.com>",
+  "license": "ISC"
+}

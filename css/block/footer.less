@@ -1,0 +1,102 @@
+//main: ../style.less
+.footer{
+  width: 100%;
+  background-color: rgb(26, 28, 44);
+}
+.footer__inner{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 0;
+}
+.footer__block{
+  width: 50%;
+  padding: 0 15px;
+  text-align: center;
+}
+.footer__title{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: @yellow;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer__info{
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: @lightgreen;
+}
+.footer__contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 150px;
+}
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  margin: 15px;
+  fill: @yellow;
+  transition: fill .3s linear;
+}
+.social{
+  display: flex;
+}
+.social--footer{
+  justify-content: center;
+}
+.social__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  background-color: @yellow;
+  width: 40px;
+  height: 40px;
+  border: 1px solid @yellow;
+  transition: background-color .2s linear;
+}
+.social__item:hover{
+  background-color: @yellow;
+}
+.social__item:hover .social__icon{
+  fill: @red;
+}
+.social--footer .social__item{
+  background-color: transparent;
+  border-width: 2px;
+  border-color: @yellow;
+  border-radius: 2px;
+}
+.social--footer .social__item:hover{
+  background-color: @yellow;
+}
+.social__icon{
+  display: block;
+  height: 30px;
+  fill: @yellow;
+  transition: fill .2s linear;
+}
+.social--footer .social__icon{
+  fill: @yellow;
+}
+.footer__text{
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: @lightgreen;
+}
+.copyright{
+  padding: 20px 0;
+  background-color: #101125;
+}
+.copyright__text{
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: @lightgreen;
+}
+.copyright__text span{
+  color: @red;
+}

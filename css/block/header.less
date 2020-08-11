@@ -1,0 +1,65 @@
+//main: ../style.less
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.header__logo{
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: @yellow;
+  
+}
+.nav{
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.nav__link{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: @red;
+  letter-spacing: 1px;
+  transition: .6s;
+}
+
+.nav__link:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: @yellow;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  transition: width .3s linear, color .3s linear;
+}
+.nav__link:hover {
+  color: @yellow;
+}
+.nav__link:hover:after{
+  display: block;
+  width: 100%;
+}
+.nav__link.active {
+  color: @yellow;
+  background:none;
+  }
+
+.sticky {
+  padding: 5px 100px;
+  background: transparent;
+}
